@@ -1,0 +1,11 @@
+{
+  "name": "example",
+  "path": "skills/example",
+  "version": "0.1.0",
+  "summary": "填写本包实际解决的问题",
+  "license": "填写已确认的许可证",
+  "validation": {
+    "level": "held-out-regression",
+    "summary": "填写真实执行过的样本、环境与主要限制"
+  }
+}
