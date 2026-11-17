@@ -14,7 +14,19 @@
 
 适用于个人创作者、经营者、实物或软件产品团队，以及代客户写内容的顾问。它会区分使用者、作者、产品提供者与最终受众，避免把顾问经历写成客户经历。
 
-## 安装
+## 最简单的用法：把文件发给 AI
+
+下载 [SKILL.md](SKILL.md)，把它上传到能读取文件的 AI 对话中，再发送下面这段话。文件名可以改为“决策型营销-直接发给AI.md”。
+
+> 请完整读取附件并使用决策型营销技能。若能持久安装到当前工具实际读取的技能目录，请直接安装并核对，已有同名内容不同时先保留并告诉我；否则在本次对话使用，并说明使用范围。先根据我的资料判断真正的问题，缺少关键背景或案例时问我，信息足够后完成任务。
+
+接着发你的产品介绍、原稿或具体问题，无需先填问卷。这种用法无需运行安装命令，也不需要另装 Node.js、npm 或 Git。
+
+AI 能读取附件时，就可以按文件规则在当前对话协作。要在新对话继续使用，可以重新上传；具备持久 Skill 安装能力和相应权限的工具，可以代为安装。将文件放进临时沙盒只用于当前任务，不能据此报告已完成持久安装。工具只提供手动导入入口时，按该工具的导入步骤操作即可。
+
+不能读取 .md 时，用文本编辑器打开并复制全文到对话里，再发送上述要求。ChatGPT 支持 Markdown 文档上传，见[文件说明](https://help.openai.com/en/articles/8555545-file-uploads-faq)。本机 Skill 的文件结构见 [Codex 文档](https://developers.openai.com/codex/skills/)和 [Claude Code 文档](https://code.claude.com/docs/en/skills)。
+
+## 可选：使用安装命令
 
 需要能运行命令、支持 Agent Skills 的 AI 工具，以及 Node.js 22.20 或更新版本、npm 和 Git。安装器使用固定的 `skills@1.9.0`。安装器选项见[官方说明](https://github.com/vercel-labs/skills/blob/main/docs/commands.md)。
 
@@ -35,8 +47,6 @@ npx -y skills@1.9.0 add zichen-ai/zichen-skills --skill decision-marketing -g -a
 也可以把下面这段话交给有本机操作能力的 AI 助手：
 
 > 请从 https://github.com/zichen-ai/zichen-skills 安装 decision-marketing 到我当前使用的 AI 工具。只安装这个 Skill，保留其他已有技能。安装后检查 SKILL.md 可以读取，再告诉我怎样调用。
-
-使用普通网页聊天工具时，可打开 [完整 MD](SKILL.md)，把文件作为本次对话资料，并要求按照其中规则执行。它不会因此自动成为该工具的永久插件。
 
 ## 输入
 
