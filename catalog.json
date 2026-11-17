@@ -8,8 +8,8 @@
       "summary": "逐轮理解业务与真实需求，提炼购买理由，把自我营销自然写进内容。",
       "license": "MIT",
       "validation": {
-        "level": "held-out-regression",
-        "summary": "结构检查与六组模拟行为测试，含背景和案例追问、信息齐全直接交稿、局部修改回归及独立实物商品留出样本。测试记录保留在发布者本地。"
+        "level": "installed",
+        "summary": "结构检查、六组模拟行为测试（含独立留出与局部修改回归）通过；Windows 隔离目录中使用 skills@1.9.0 从 GitHub 完成 Codex、Claude Code 全局安装和发现，四个文件内容一致。测试记录保留在发布者本地。"
       }
     }
   ]
