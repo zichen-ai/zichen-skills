@@ -1,0 +1,4 @@
+interface:
+  display_name: "decision-marketing（决策型营销）"
+  short_description: "逐轮了解业务与客户选择，提炼购买理由，把自我营销自然写进内容"
+  default_prompt: "使用 $decision-marketing，先根据我已有的材料判断产品、客户真实需求与本次目标。关键背景、为什么选择我或适合植入的案例不清楚时，带着具体判断问我；有足够依据后，把购买理由自然写进内容，保留原有观点和表达。"
